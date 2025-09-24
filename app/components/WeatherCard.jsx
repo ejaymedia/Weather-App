@@ -2,8 +2,9 @@ import { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, FlatList } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 import { Feather, MaterialCommunityIcons } from "@expo/vector-icons";
+import { WEATHER_API_KEY } from "@env";
 
-const API = "ca6f68aac44af682d699cc859590f9a4";
+const API = WEATHER_API_KEY;
 
 const WeatherCard = () => {
   const [city, setCity] = useState("");
